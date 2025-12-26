@@ -178,11 +178,87 @@ Wenn du verstehen willst, **was dein System tut**, dann schon.
 If you want a fully preconfigured desktop, this project is **not** for you.  
 If you want to understand **what your system is doing**, it is.
 
+## ⚠️ Disclaimer
 
+🇩🇪
+Dieses Setup ist hardware-spezifisch und primär als persönliche Referenz gedacht.
+Es gibt keinen Anspruch auf universelle Einsetzbarkeit.
+
+🇬🇧
+This setup is hardware-specific and primarily intended as a personal reference.
+There is no guarantee of suitability for other systems.
+
+
+
+---
 ## 🚀 Quick Start (Kurzfassung)
 
-```bash
 git clone https://github.com/dennishilk/debian-wm-lab.git
+
 cd debian-wm-lab
+
 chmod +x install.sh
+
 ./install.sh
+
+---
+## 🧱 Repository Structure / Struktur
+
+```text
+debian-wm-lab/
+├── README.md
+├── INSTALL.md
+├── CHANGELOG.md
+├── LICENSE
+│
+├── install.sh                 # Main interactive installer (WM + base)
+├── install-tools.sh           # Optional user tools (browser, steam, obs…)
+│
+├── common/
+│   ├── packages.sh            # Common apt packages
+│   ├── services.sh            # LightDM, NetworkManager, PipeWire
+│   ├── x11.sh                 # Xorg, drivers, xinit
+│   ├── users.sh               # User, groups, shell
+│   ├── shell/
+│   │   ├── fish.conf          # fish config (fastfetch etc.)
+│   │   └── kitty.conf         # kitty base config (opacity, font)
+│   │
+│   ├── wallpapers/
+│   │   └── 1.png
+│   │
+│   └── helpers.sh             # ask(), run(), dry-run logic
+│
+├── wms/
+│   ├── xmonad/
+│   │   ├── install.sh
+│   │   ├── xmonad.hs
+│   │   ├── xmobar.conf        # optional / später
+│   │   └── README.md
+│   │
+│   ├── dwm/
+│   │   ├── install.sh
+│   │   ├── config.h
+│   │   ├── patches/           # optional
+│   │   └── README.md
+│   │
+│   ├── qtile/
+│   │   ├── install.sh
+│   │   ├── config.py
+│   │   └── README.md
+│   │
+│   ├── ratpoison/
+│   │   ├── install.sh
+│   │   ├── ratpoisonrc
+│   │   └── README.md
+│   │
+│   └── evilwm/
+│       ├── install.sh
+│       └── README.md
+│
+└── docs/
+    ├── keybindings.md         # XMonad / dwm cheatsheets
+    ├── troubleshooting.md
+    └── philosophy.md
+
+
+
