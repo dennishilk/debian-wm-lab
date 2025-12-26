@@ -1,4 +1,4 @@
-# Gaming
+#Gaming
 steam
 mangohud
 gamescope
