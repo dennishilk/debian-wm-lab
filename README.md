@@ -1,4 +1,11 @@
 # 🧪 debian-wm-lab
+![Debian](https://img.shields.io/badge/Debian-13-red?logo=debian&logoColor=white)
+![X11](https://img.shields.io/badge/X11-only-blue)
+![xmonad](https://img.shields.io/badge/xmonad-Haskell-9f7aea?logo=haskell&logoColor=white)
+![dwm](https://img.shields.io/badge/dwm-suckless-000000?logo=linux&logoColor=white)
+![qtile](https://img.shields.io/badge/qtile-Python-38b2ac?logo=python&logoColor=white)
+![ratpoison](https://img.shields.io/badge/ratpoison-keyboard--driven-f97316)
+![evilwm](https://img.shields.io/badge/evilwm-minimal-ef4444)
 
 A minimal Debian 13 X11 playground to install, test and compare classic tiling window managers.
 ---
