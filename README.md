@@ -1,30 +1,30 @@
-# debian-wm-lab
+# 🧪 debian-wm-lab
 
-**A minimal Debian 13 X11 playground to install and test tiling window managers like xmonad, dwm, qtile, ratpoison and evilwm.**
-
+A minimal Debian 13 X11 playground to install, test and compare classic tiling window managers.
 ---
 
 ## 🇩🇪 Was ist debian-wm-lab?
 
-**debian-wm-lab** ist ein **minimales, interaktives Setup-Projekt** für Debian 13,  
-das eine **saubere X11-Basis** bereitstellt, um klassische und minimalistische  
-**Window Manager zu installieren, zu testen und zu vergleichen**.
+debian-wm-lab ist ein minimales, interaktives Setup-Projekt für Debian 13,
+das eine saubere X11-Basis bereitstellt, um klassische und minimalistische
+Window Manager zu installieren, zu testen und miteinander zu vergleichen.
 
 Der Fokus liegt auf:
 - Stabilität
 - Reproduzierbarkeit
 - minimalem Overhead
-- nachvollziehbaren Entscheidungen
+- transparenten, nachvollziehbaren Entscheidungen
 
-Dieses Projekt ist **kein Desktop Environment**, **keine Distro** und **kein All-in-One-Installer**.
+Dieses Projekt ist kein Desktop Environment, keine Distribution
+und kein „Install-alles“-Skript.
 
 ---
 
 ## 🇬🇧 What is debian-wm-lab?
 
-**debian-wm-lab** is a **minimal, interactive setup project** for Debian 13  
-that provides a **clean X11 base** to install, test and compare classic and minimal  
-**tiling window managers**.
+debian-wm-lab is a minimal, interactive setup project for Debian 13
+that provides a clean X11 base to install, test and compare classic
+tiling window managers.
 
 The focus is on:
 - stability
@@ -32,23 +32,24 @@ The focus is on:
 - minimal overhead
 - transparent, understandable choices
 
-This project is **not a desktop environment**, **not a distribution**, and **not an all-in-one installer**.
+This project is not a desktop environment, not a Linux distribution,
+and not an all-in-one installer.
 
 ---
 
 ## 🎯 Projektziel / Project goal
 
-🇩🇪  
+🇩🇪
 Ein reproduzierbares Debian-13-System, das:
-- bewusst **wenig** installiert
-- eine **einheitliche Basis** für verschiedene WMs bietet
-- ideal für **Tests, Vergleiche ** ist
+- bewusst wenig installiert
+- eine einheitliche Basis für verschiedene Window Manager bietet
+- ideal für Tests, Vergleiche und Lernzwecke ist
 
-🇬🇧  
+🇬🇧
 A reproducible Debian 13 system that:
-- installs **only what is necessary**
-- provides a **consistent base** for multiple WMs
-- is ideal for **testing, comparisons **
+- installs only what is necessary
+- provides a consistent base for multiple window managers
+- is ideal for testing, comparison and learning
 
 ---
 
@@ -104,47 +105,24 @@ Wayland window managers are **explicitly out of scope** for this project.
 
 ---
 
-## 🧰 Enthaltene Basis-Tools (Common Toolset)
+## 🧰 Gemeinsame Basis / Common Base
 
-🇩🇪  
-Alle Window Manager teilen **dieselbe minimale Basis**
+🇩🇪
+Alle Window Manager teilen dieselbe minimale Basis.
 
-🇬🇧  
-All window managers share the **same minimal base setup**
+🇬🇧
+All window managers share the same minimal base setup.
 
----
+Enthalten sind u. a.:
 
-### 🔑 Core
 - Xorg (X11)
-- LightDM (Display Manager)
+- LightDM (optional, user-selected)
 - NetworkManager
 - PipeWire (Audio)
-
----
-
-### 🖥️ Terminal & Shell
-- **kitty** (Terminal Emulator)
-- **fish** (Default Shell)
-- **fastfetch** (System information on shell start)
-
----
-
-### 🚀 Launcher & Utilities
-- **dmenu**
 - feh (Wallpaper)
-- scrot (Screenshots)
-- brightnessctl
-- pamixer
-
----
-
-### 🔧 CLI-Tools
-- git
-- curl
-- wget
-- unzip
-- xrandr / xev
-- basic fonts (JetBrains Mono)
+- picom (Compositor)
+- dmenu
+- grundlegende Fonts (DejaVu, Liberation)
 
 🇩🇪  
 👉 **Kein Browser, kein Editor, keine IDEs, kein Gaming-Stack.**  
@@ -178,6 +156,51 @@ Wenn du verstehen willst, **was dein System tut**, dann schon.
 If you want a fully preconfigured desktop, this project is **not** for you.  
 If you want to understand **what your system is doing**, it is.
 
+---
+## 🧰 install-apps.sh
+
+## 🇩🇪 Beschreibung
+
+Der Userland-Apps-Installer installiert typische Anwendungen,
+die viele Nutzer brauchen oder glauben zu brauchen,
+ohne das Basissystem, Window Manager oder Kernel-Einstellungen zu verändern.
+
+Kategorien & enthaltene Software:
+
+- 🌍 Browsers
+Firefox ESR, Chromium
+- 🎮 Gaming
+Steam (inkl. i386-Multiarch), MangoHud, Gamescope
+- 🎬 Media / Content Creation
+VLC, OBS Studio, Audacity, GIMP
+- 🧰 Tools & Utilities
+fastfetch, htop, pavucontrol, …
+
+Optional:
+- 🔐 Google Chrome
+Explizite Installation über externes Repository
+
+## 🇬🇧 Description
+
+The Userland Applications Installer installs common applications
+that many users need or expect to need,
+without touching the base system, window manager, or kernel settings.
+
+Categories & included software:
+- 🌍 Browsers
+Firefox ESR, Chromium
+- 🎮 Gaming
+Steam (including i386 multi-architecture support), MangoHud, Gamescope
+- 🎬 Media / Content Creation
+VLC, OBS Studio, Audacity, GIMP
+- 🧰 Tools & Utilities
+fastfetch, htop, pavucontrol, …
+
+Optional:
+- 🔐 Google Chrome
+Explicit installation via external repository
+---
+
 ## ⚠️ Disclaimer
 
 🇩🇪
@@ -207,58 +230,32 @@ chmod +x install.sh
 ```text
 debian-wm-lab/
 ├── README.md
-├── INSTALL.md
-├── CHANGELOG.md
-├── LICENSE
-│
-├── install.sh                 # Main interactive installer (WM + base)
-├── install-tools.sh           # Optional user tools (browser, steam, obs…)
+├── install.sh            # Base + WM + optional extras
+├── install-apps.sh       # Userland applications
 │
 ├── common/
-│   ├── packages.sh            # Common apt packages
-│   ├── services.sh            # LightDM, NetworkManager, PipeWire
-│   ├── x11.sh                 # Xorg, drivers, xinit
-│   ├── users.sh               # User, groups, shell
-│   ├── shell/
-│   │   ├── fish.conf          # fish config (fastfetch etc.)
-│   │   └── kitty.conf         # kitty base config (opacity, font)
-│   │
-│   ├── wallpapers/
-│   │   └── 1.png
-│   │
-│   └── helpers.sh             # ask(), run(), dry-run logic
+│   ├── packages.txt      # Common base packages
+│   └── assets/
+│       └── wallpapers/
+│           └── lab-default.png
 │
-├── wms/
-│   ├── xmonad/
-│   │   ├── install.sh
-│   │   ├── xmonad.hs
-│   │   ├── xmobar.conf        # optional / später
-│   │   └── README.md
-│   │
-│   ├── dwm/
-│   │   ├── install.sh
-│   │   ├── config.h
-│   │   ├── patches/           # optional
-│   │   └── README.md
-│   │
-│   ├── qtile/
-│   │   ├── install.sh
-│   │   ├── config.py
-│   │   └── README.md
-│   │
-│   ├── ratpoison/
-│   │   ├── install.sh
-│   │   ├── ratpoisonrc
-│   │   └── README.md
-│   │
-│   └── evilwm/
-│       ├── install.sh
-│       └── README.md
+├── wm/
+│   ├── xmonad/packages.txt
+│   ├── dwm/packages.txt
+│   ├── qtile/packages.txt
+│   ├── ratpoison/packages.txt
+│   └── evilwm/packages.txt
 │
-└── docs/
-    ├── keybindings.md         # XMonad / dwm cheatsheets
-    ├── troubleshooting.md
-    └── philosophy.md
+├── extras/
+│   ├── fonts/packages.txt
+│   ├── terminals/packages.txt
+│   └── editors/packages.txt
+│
+└── apps/
+    ├── browsers/packages.txt
+    ├── gaming/packages.txt
+    ├── media/packages.txt
+    └── tools/packages.txt
 
 
 
