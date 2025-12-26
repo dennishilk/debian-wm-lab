@@ -6,7 +6,6 @@
 ![qtile](https://img.shields.io/badge/qtile-TILING-green)
 ![ratpoison](https://img.shields.io/badge/ratpoison-TILING-pink)
 ![evilwm](https://img.shields.io/badge/evilwm-FLOATING-purple)
-![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash&logoColor=white)
 ![boring is good](https://img.shields.io/badge/boring-is%20good-2563eb)
 
 
