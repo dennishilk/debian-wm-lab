@@ -52,8 +52,9 @@ A reproducible Debian 13 system that:
 
 ---
 
-## 🧠 Philosophie
+## 🧠 Philosophie / Philosophy
 
+🇩🇪  
 - **X11 only** (bewusst)
 - **boring is good**
 - **no magic**
@@ -63,10 +64,21 @@ A reproducible Debian 13 system that:
 Dieses Projekt versucht **nicht**, dir einen perfekten Desktop vorzuschreiben.  
 Es gibt dir lediglich eine **saubere Ausgangsbasis**.
 
+🇬🇧  
+- **X11 only** (by design)
+- **boring is good**
+- **no magic**
+- **no hidden services**
+- **user decides what comes next**
+
+This project does **not** try to define a perfect desktop for you.  
+It simply provides a **clean and minimal starting point**.
+
 ---
 
-## 🪟 Unterstützte Window Manager
+## 🪟 Unterstützte Window Manager / Supported Window Managers
 
+🇩🇪  
 Aktuell geplant / unterstützt:
 
 - **xmonad**
@@ -78,12 +90,31 @@ Aktuell geplant / unterstützt:
 Alle Window Manager laufen **nativ unter X11**.  
 Wayland-WMs sind **nicht Teil dieses Projekts**.
 
+🇬🇧  
+Currently planned / supported:
+
+- **xmonad**
+- **dwm**
+- **qtile**
+- **ratpoison**
+- **evilwm**
+
+All window managers run **natively on X11**.  
+Wayland window managers are **explicitly out of scope** for this project.
+
 ---
 
 ## 🧰 Enthaltene Basis-Tools (Common Toolset)
 
+🇩🇪  
 Alle Window Manager teilen **dieselbe minimale Basis**, aktuell identisch zum  
 bewährten XMonad-Setup.
+
+🇬🇧  
+All window managers share the **same minimal base setup**, currently identical  
+to the proven XMonad reference setup.
+
+---
 
 ### 🔑 Core
 - Xorg (X11)
@@ -91,10 +122,14 @@ bewährten XMonad-Setup.
 - NetworkManager
 - PipeWire (Audio)
 
+---
+
 ### 🖥️ Terminal & Shell
 - **kitty** (Terminal Emulator)
 - **fish** (Default Shell)
-- **fastfetch** (System Info on shell start)
+- **fastfetch** (System information on shell start)
+
+---
 
 ### 🚀 Launcher & Utilities
 - **dmenu**
@@ -102,6 +137,8 @@ bewährten XMonad-Setup.
 - scrot (Screenshots)
 - brightnessctl
 - pamixer
+
+---
 
 ### 🔧 CLI-Tools
 - git
@@ -111,13 +148,19 @@ bewährten XMonad-Setup.
 - xrandr / xev
 - basic fonts (JetBrains Mono)
 
+🇩🇪  
 👉 **Kein Browser, kein Editor, keine IDEs, kein Gaming-Stack.**  
 Alles Weitere ist **bewusst User-Entscheidung**.
 
+🇬🇧  
+👉 **No browser, no editor, no IDEs, no gaming stack.**  
+Everything else is a **deliberate user decision**.
+
 ---
 
-## 🚫 Was dieses Projekt bewusst NICHT ist
+## 🚫 Was dieses Projekt bewusst NICHT ist / What this project is NOT
 
+🇩🇪  
 - ❌ keine eigene Distribution
 - ❌ kein Full-Desktop-Replacement
 - ❌ kein Wayland-Projekt
@@ -127,7 +170,16 @@ Alles Weitere ist **bewusst User-Entscheidung**.
 Wenn du „alles fertig“ willst, ist dieses Projekt **nicht** für dich.  
 Wenn du verstehen willst, **was dein System tut**, dann schon.
 
----
+🇬🇧  
+- ❌ not a custom Linux distribution
+- ❌ not a full desktop replacement
+- ❌ not a Wayland project
+- ❌ not an “install everything” script
+- ❌ not an opinionated workflow
+
+If you want a fully preconfigured desktop, this project is **not** for you.  
+If you want to understand **what your system is doing**, it is.
+
 
 ## 🚀 Quick Start (Kurzfassung)
 
