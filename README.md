@@ -1,11 +1,14 @@
 ## 🧪 debian-wm-lab
- ![Debian](https://img.shields.io/badge/Debian-13-red?logo=debian&logoColor=white)
- ![X11](https://img.shields.io/badge/X11-only-blue)
- ![xmonad](https://img.shields.io/badge/xmonad-TILING-purple)
- ![dwm](https://img.shields.io/badge/dwm-TILING-black)
- ![qtile](https://img.shields.io/badge/qtile-TILING-green)
- ![ratpoison](https://img.shields.io/badge/ratpoison-TILING-orange)
- ![evilwm](https://img.shields.io/badge/evilwm-FLOATING-red)
+![Debian](https://img.shields.io/badge/Debian-13-d70a53?logo=debian&logoColor=white)
+![X11](https://img.shields.io/badge/X11-only-yellow)
+![xmonad](https://img.shields.io/badge/xmonad-TILING-magenta)
+![dwm](https://img.shields.io/badge/dwm-tiling-d65d0e)
+![qtile](https://img.shields.io/badge/qtile-TILING-green)
+![ratpoison](https://img.shields.io/badge/ratpoison-TILING-pink)
+![evilwm](https://img.shields.io/badge/evilwm-FLOATING-purple)
+![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash&logoColor=white)
+![boring is good](https://img.shields.io/badge/boring-is%20good-2563eb)
+
 
 A minimal Debian 13 X11 playground to install, test and compare classic tiling window managers.
 ---
