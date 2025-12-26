@@ -225,6 +225,13 @@ chmod +x install.sh
 ./install.sh
 
 ---
+optional:
+
+chmod +x install-apps.sh
+
+./install-apps.sh
+
+---
 ## 🧱 Repository Structure / Struktur
 
 ```text
