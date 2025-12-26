@@ -1,0 +1,7 @@
+########################################
+# xmonad — tiling WM (Haskell)
+########################################
+
+xmonad
+xmobar
+libghc-xmonad-contrib-dev

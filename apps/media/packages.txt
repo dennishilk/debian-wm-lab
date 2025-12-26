@@ -1,0 +1,5 @@
+# Media & Content Creation
+vlc
+obs-studio
+audacity
+gimp

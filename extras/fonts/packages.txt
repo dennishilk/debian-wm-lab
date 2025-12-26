@@ -1,0 +1,6 @@
+########################################
+# Optional fonts (user choice)
+########################################
+
+fonts-jetbrains-mono
+fonts-firacode
