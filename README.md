@@ -273,6 +273,8 @@ debian-wm-lab/
     ├── gaming/packages.txt
     ├── media/packages.txt
     └── tools/packages.txt
+```
+![Shell](https://img.shields.io/badge/GitHub%20Linguist-Shell%20100%25-4EAA25) 😉
 
 
 
