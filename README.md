@@ -42,13 +42,13 @@ This project is **not a desktop environment**, **not a distribution**, and **not
 Ein reproduzierbares Debian-13-System, das:
 - bewusst **wenig** installiert
 - eine **einheitliche Basis** für verschiedene WMs bietet
-- ideal für **Tests, Vergleiche, Lernen und YouTube-Content** ist
+- ideal für **Tests, Vergleiche ** ist
 
 🇬🇧  
 A reproducible Debian 13 system that:
 - installs **only what is necessary**
 - provides a **consistent base** for multiple WMs
-- is ideal for **testing, comparisons, learning and YouTube content**
+- is ideal for **testing, comparisons **
 
 ---
 
@@ -107,12 +107,10 @@ Wayland window managers are **explicitly out of scope** for this project.
 ## 🧰 Enthaltene Basis-Tools (Common Toolset)
 
 🇩🇪  
-Alle Window Manager teilen **dieselbe minimale Basis**, aktuell identisch zum  
-bewährten XMonad-Setup.
+Alle Window Manager teilen **dieselbe minimale Basis**
 
 🇬🇧  
-All window managers share the **same minimal base setup**, currently identical  
-to the proven XMonad reference setup.
+All window managers share the **same minimal base setup**
 
 ---
 
