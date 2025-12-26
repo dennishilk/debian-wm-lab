@@ -6,7 +6,8 @@
 ![qtile](https://img.shields.io/badge/qtile-TILING-green)
 ![ratpoison](https://img.shields.io/badge/ratpoison-TILING-pink)
 ![evilwm](https://img.shields.io/badge/evilwm-FLOATING-purple)
-![boring is good](https://img.shields.io/badge/boring-is%20good-2563eb)
+![Tee](https://img.shields.io/badge/Tea-sudo%20holdmyteacup-2563eb)
+
 
 
 A minimal Debian 13 X11 playground to install, test and compare classic tiling window managers.
