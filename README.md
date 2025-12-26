@@ -132,7 +132,7 @@ Wenn du verstehen willst, **was dein System tut**, dann schon.
 ## 🚀 Quick Start (Kurzfassung)
 
 ```bash
-git clone https://github.com/<username>/debian-wm-lab.git
+git clone https://github.com/dennishilk/debian-wm-lab.git
 cd debian-wm-lab
 chmod +x install.sh
 ./install.sh
